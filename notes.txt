@@ -1,0 +1,15 @@
+Authentication => identifies req comes from which user
+
+Authorization => what user can do 
+
+validation => to check the format of data
+
+
+verification => is data right or not
+
+
+To combine frontend into backend - 
+1- Frontend - npm run build
+2- a dist folder is created in Frontend folder
+3- Copy the .css, .js file and paste it into public > assets folder  and .html file into public folder.
+4- Remove all 3 files from dist folder
