@@ -7,7 +7,7 @@ function App() {
 //  console.log("hello integration")
 
  function fetchNotes(){
-    axios.get('http://localhost:3000/notes')
+    axios.get('https://firstmern-xl5h.onrender.com/notes')
     .then(res => {
       console.log(res.data);
       setNotes(res.data.note)
@@ -25,7 +25,7 @@ useEffect(() => {
   const {title,description} = e.target.elements;
   // console.log(title.value,description.value);
 
-axios.post("http://localhost:3000/notes",{
+axios.post("https://firstmern-xl5h.onrender.com/notes",{
       title: title.value,
       description: description.value
     })
@@ -37,7 +37,7 @@ axios.post("http://localhost:3000/notes",{
 
 function handleDelteNote(noteId){
 
-  axios.delete("http://localhost:3000/notes/"+noteId)
+  axios.delete("https://firstmern-xl5h.onrender.com/notes/"+noteId)
   .then(res => {
     console.log(res.data)
     fetchNotes()
